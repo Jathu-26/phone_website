@@ -179,7 +179,58 @@
             "image": "./images/products/headphone/headphone12.jpeg",
             "price": 600,
             "category": "Featured Products"
-        }
+        },
+        {
+  "id": 31,
+  "title": "Apple MacBook Air (MGN63PA/A)",
+  "image": "./images/products/laptop/laptop24.jpg",
+  "price": 2000,
+  "category": "Laptops"
+},
+{
+  "id": 32,
+  "title": "ASUS ROG Strix G16",
+  "image": "./images/products/laptop/laptop25.jpeg",
+  "price": 2099,
+  "category": "Laptops"
+},
+{
+  "id": 33,
+  "title": "Acer Nitro V Gaming Laptop",
+  "image": "./images/products/laptop/laptop26.jpg",
+  "price": 849,
+  "category": "Laptops"
+},
+{
+  "id": 34,
+  "title": "MSI Katana 15",
+  "image": "./images/products/laptop/laptop27.jpeg",
+  "price": 1499,
+  "category": "Laptops"
+},
+{
+  "id": 35,
+  "title": "HP 14 Laptop",
+  "image": "./images/products/laptop/laptop28.jpg",
+  "price": 172,
+  "category": "Laptops"
+},
+{
+  "id": 36,
+  "title": "Dell Latitude 3190",
+  "image": "./images/products/laptop/laptop29.jpg",
+  "price": 164,
+  "category": "Laptops"
+},
+{
+  "id": 37,
+  "title": "Samsung 16” Galaxy Book5 Pro",
+  "image": "./images/products/laptop/laptop30.jpg",
+  "price": 1349,
+  "category": "Laptops"
+}
+
+
 
     ]
 }
