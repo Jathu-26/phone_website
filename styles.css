@@ -452,7 +452,9 @@ Hero Area
 }
 
 .hero__right img.banner_03 {
-  width: 70%;
+  width: 100%; 
+  height: 50rem; 
+  object-fit: contain;;
 }
 
 /*
@@ -541,6 +543,10 @@ Collection
 .img__container {
   width: 25rem;
   text-align: center;
+  height: 25rem; /* Add a fixed height to the container. */
+  display: flex; /* Use flexbox to center the image. */
+  align-items: center;
+  justify-content: center;
 }
 
 .collection__box img.collection_01 {
@@ -549,6 +555,11 @@ Collection
 
 .collection__box img.collection_02 {
   width: 75%;
+}
+.collection__box img {
+  width: 100%; /* Make all images fill their container. */
+  height: 100%;
+  object-fit: contain; /* This will make the image fit inside its box without being cropped. */
 }
 
 .collection__content {
@@ -835,12 +846,13 @@ span.dot::before {
   height: 25rem;
   padding: 0.5rem 0;
   text-align: center;
+  overflow: hidden; 
 }
 
 .product__header img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  width: 100%; /* Make the image fill the width of the container. */
+  height: 100%; /* Make the image fill the height of the container. */
+  object-fit:
 }
 
 .product__footer {
