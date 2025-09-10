@@ -844,15 +844,15 @@ span.dot::before {
 
 .product__header {
   height: 25rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem ;
   text-align: center;
   overflow: hidden; 
 }
 
 .product__header img {
-  width: 100%; /* Make the image fill the width of the container. */
-  height: 100%; /* Make the image fill the height of the container. */
-  object-fit:
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* This is the key to fixing the distortion. */
 }
 
 .product__footer {
@@ -980,7 +980,7 @@ Latest Products Media Query
   }
 
   .product__header img {
-    width: 50%;
+    width: 100%;
   }
 
   .product__footer h3 {
@@ -1578,18 +1578,65 @@ News Section
   padding-bottom: 8rem;
 }
 
+/* make slides row flex so all children stretch */
+.news .glide__slides {
+  display: flex;
+  align-items: stretch;
+}
+
+/* each slide must also be flex so its card can stretch */
+.news .glide__slide {
+  display: flex;
+  align-items: stretch;
+}
+
 .new__card {
   background-color: var(--primaryColor);
   width: 95%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;        /* fill the parent slide */
+  min-height: 38rem;   /* ensures same visual height */
+  box-sizing: border-box;
+}
+
+.new__card .card__header img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  display: block;
+}
+
+.card__footer {
+  padding: 1rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: space-between; /* keeps button at bottom */
+  box-sizing: border-box;
 }
 
 .new__card:not(:last-child) {
   margin-right: 1rem;
 }
 
-.card__footer {
-  padding: 3rem 1.4rem;
+.new__card .card__header img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  display: block;
+}
+
+
+.new__card:not(:last-child) {
+  margin-right: 1rem;
+}
+.new__card .card__header img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  display: block;
 }
 
 .card__footer h3 {
@@ -1610,6 +1657,8 @@ News Section
   color: var(--black2);
   margin-bottom: 1.6rem;
   line-height: 2.7rem;
+   flex: 1;
+
 }
 
 .card__footer a button,
